@@ -1,12 +1,7 @@
 <?php
 /**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Bootstrap_to_WordPress
+ * @package Bootstrap to WordPress
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -38,8 +33,8 @@
 	</div><!-- post-image -->
 	<?php } ?>
 	
-	<div class="post-excerpt">
-		<?php the_excerpt(); ?>
-	</div><!-- post-excerpt -->
-	
+	<div class="post-body">
+		<?php the_content(); ?>
+	</div><!-- post-body -->
+
 </article><!-- #post-## -->
